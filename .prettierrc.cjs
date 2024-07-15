@@ -1,0 +1,23 @@
+module.exports = {
+  endOfLine: "lf",
+  semi: false,
+  printWidth: 120,
+  trailingComma: "es5",
+  singleQuote: false,
+  jsxSingleQuote: true,
+  arrowParens: "avoid",
+  tabWidth: 2,
+  importOrder: [
+    "<BUILTIN_MODULES>",
+    "",
+    "^(react/(.*)$)|^(react$)",
+    "^(next/(.*)$)|^(next$)",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@src/(.*)$",
+    "",
+    "^[./]",
+  ],
+  importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
+  plugins: ["@ianvs/prettier-plugin-sort-imports"],
+}
