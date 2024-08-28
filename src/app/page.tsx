@@ -1,11 +1,11 @@
-import { ColorSchemeToggle } from "@src/components/ColorSchemeToggle/ColorSchemeToggle"
-import { Welcome } from "@src/components/Welcome/Welcome"
+import { Container } from "@mantine/core"
+
+import { TopBar } from "@src/components/Topbar/Topbar"
 
 export default function HomePage() {
   return (
-    <>
-      <Welcome />
-      <ColorSchemeToggle />
-    </>
+    <Container pt='lg'>
+      <TopBar />
+    </Container>
   )
 }

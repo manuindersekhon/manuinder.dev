@@ -1,0 +1,28 @@
+.topbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  border-radius: var(--mantine-radius-xl);
+  padding: var(--mantine-spacing-xs);
+
+  @mixin light {
+    background-color: #e0d6d291;
+  }
+
+  @mixin dark {
+    background-color: #3a3a3a;
+  }
+}
+
+.link {
+  color: var(--mantine-color-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--mantine-font-size-sm);
+}
+
+.link:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
