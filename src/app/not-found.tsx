@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Button, Container, Group, Title } from "@mantine/core"
 
@@ -16,13 +15,13 @@ export default function NotFound() {
       <Title mb='xl' ta='center' fw={900} ff='var(--mantine-font-family)'>
         Looks like you&apos;re lost
       </Title>
-      <Image
-        mt='xl'
+      <img
         src='/cat-not-found.png'
         alt='404 not found'
         width={300}
         height={300}
         style={{
+          marginTop: "var(--mantine-spacing-xl)",
           borderRadius: "10px",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
         }}
