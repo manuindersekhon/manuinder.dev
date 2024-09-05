@@ -1,3 +1,3 @@
 # Personal Website
 
-manuinder.dev
+My Personal website to showcase my work and projects
