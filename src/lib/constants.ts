@@ -29,7 +29,7 @@ export const projects = [
 
 export const techTalk = {
   title: "Calling C code in Dart using Foreign Function Interface",
-  videoId: "iO85_bdqjvs",
+  videoId: "iO85_bdqjvs?si=7fTXwmRu9LuLQQYU",
   date: "Jul 16, 2021",
 }
 

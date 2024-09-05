@@ -28,16 +28,16 @@ export function TopBar() {
 
   return (
     <Group className={classes.topbar}>
-      <Anchor onClick={e => handleClick(e, "#about")} className={classes.link}>
+      <Anchor href='#about' onClick={e => handleClick(e, "#about")} className={classes.link}>
         ABOUT
       </Anchor>
-      <Anchor onClick={e => handleClick(e, "#work")} className={classes.link}>
+      <Anchor href='#work' onClick={e => handleClick(e, "#work")} className={classes.link}>
         WORK
       </Anchor>
-      <Anchor onClick={e => handleClick(e, "#blog")} className={classes.link}>
+      <Anchor href='#blog' onClick={e => handleClick(e, "#blog")} className={classes.link}>
         BLOG
       </Anchor>
-      <Anchor onClick={e => handleClick(e, "#contact")} className={classes.link}>
+      <Anchor href='#contact' onClick={e => handleClick(e, "#contact")} className={classes.link}>
         CONTACT
       </Anchor>
       <ColorSchemeToggle />

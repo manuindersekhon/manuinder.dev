@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Button, Card, Group, Stack, Text } from "@mantine/core"
+import { IconExternalLink } from "@tabler/icons-react"
 
 import styles from "./CertificateCard.module.css"
 
@@ -13,43 +14,46 @@ interface CertificateCardProps {
 
 export function CertificateCard({ title, description, courseLink, certificateLink, githubLink }: CertificateCardProps) {
   return (
-    <Link href={courseLink} passHref legacyBehavior>
-      <Card className={`${styles.card} ${styles.certificateCard}`} shadow='sm' padding='lg' radius='md' component='a'>
-        <Stack justify='space-between' style={{ height: "100%" }}>
-          <div>
-            <Text fw={600} size='lg' mb='md'>
+    <Card className={`${styles.card} ${styles.certificateCard}`} shadow='sm' padding='lg' radius='md'>
+      <Stack justify='space-between' style={{ height: "100%" }}>
+        <div>
+          <Group align='center' justify='space-between' mb='md'>
+            <Text fw={600} size='lg'>
               {title}
             </Text>
-            <Text size='sm' mb='md' style={{ opacity: 0.9 }}>
-              {description}
-            </Text>
-          </div>
-          <Group mt='auto' grow>
+            <Link href={courseLink} target='_blank' rel='noopener noreferrer'>
+              <IconExternalLink size='1rem' color='white' style={{ opacity: 0.7 }} />
+            </Link>
+          </Group>
+          <Text size='sm' mb='md' style={{ opacity: 0.9 }}>
+            {description}
+          </Text>
+        </div>
+        <Group mt='auto' grow>
+          <Button
+            component='a'
+            href={certificateLink}
+            target='_blank'
+            variant='outline'
+            color='gray'
+            className={styles.button}
+          >
+            Certificate
+          </Button>
+          {githubLink && (
             <Button
               component='a'
-              href={certificateLink}
+              href={githubLink}
               target='_blank'
               variant='outline'
               color='gray'
               className={styles.button}
             >
-              Certificate
+              GitHub
             </Button>
-            {githubLink && (
-              <Button
-                component='a'
-                href={githubLink}
-                target='_blank'
-                variant='outline'
-                color='gray'
-                className={styles.button}
-              >
-                GitHub
-              </Button>
-            )}
-          </Group>
-        </Stack>
-      </Card>
-    </Link>
+          )}
+        </Group>
+      </Stack>
+    </Card>
   )
 }
