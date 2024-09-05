@@ -4,7 +4,7 @@ import { usePathname, useRouter } from "next/navigation"
 import { Anchor, Group } from "@mantine/core"
 
 import { ColorSchemeToggle } from "@src/components/ColorSchemeToggle/ColorSchemeToggle"
-import classes from "@src/components/TopBar/TopBar.module.css"
+import classes from "@src/components/Topbar/Topbar.module.css"
 
 export function TopBar() {
   const router = useRouter()
