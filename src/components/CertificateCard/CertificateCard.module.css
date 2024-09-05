@@ -1,0 +1,59 @@
+.certificateCard {
+  background-color: var(--background-secondary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.certificateCard:hover {
+  transform: scale(1.05);
+}
+
+.certificateCard h3 {
+  margin-bottom: 1rem;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  color: var(--primary);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.links a:hover {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.card {
+  /* Add dark washed green gradient background */
+  background: light-dark(linear-gradient(135deg, #2c3e50, #56727c), linear-gradient(135deg, #1b2631, #2e3d43));
+  color: #ffffff;
+  height: 100%; /* Ensure the card takes full height */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Remove the hover transform effect */
+.card:hover {
+  transform: none;
+}
+
+.button {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}

@@ -1,0 +1,39 @@
+.gradientBackgroundTop {
+  background: light-dark(linear-gradient(to bottom, #ffffff, #e1e2de), linear-gradient(to bottom, #303030, #1a1a1a));
+}
+
+.gradientBackgroundBottom {
+  background: light-dark(linear-gradient(to top, #ffffff, #e1e2de), linear-gradient(to top, #303030, #1a1a1a));
+}
+
+.staticBackground {
+  background-color: light-dark(#e1e2de, #1a1a1a);
+}
+
+.topSection {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+}
+
+.midSection {
+  padding-top: 8.5rem;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    padding-top: 5rem;
+  }
+}
+
+.contactSection {
+  padding-top: 8.5rem;
+  padding-bottom: 8.5rem;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}

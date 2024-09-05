@@ -1,0 +1,26 @@
+.aboutText {
+  text-align: justify;
+  font-size: var(--mantine-font-size-xl);
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: var(--mantine-font-size-lg);
+  }
+}
+
+.locationText {
+  text-align: justify;
+  margin-top: 1.5rem;
+  font-size: var(--mantine-font-size-lg);
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: var(--mantine-font-size-md);
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: none;
+}

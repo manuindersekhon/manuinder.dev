@@ -11,7 +11,7 @@ export function HomeFooter() {
     <footer>
       <Group justify='center' gap='xs'>
         <Text size='xs' lts={lts}>
-          Built with <IconHeart size={16} style={{ display: "inline", verticalAlign: "text-bottom" }} />
+          Built with <IconHeart size={14} style={{ display: "inline", verticalAlign: "text-bottom" }} />
         </Text>
         <Text size='xs'>·</Text>
         <Text size='xs' lts={lts}>

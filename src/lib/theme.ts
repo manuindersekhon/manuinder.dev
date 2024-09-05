@@ -1,18 +1,24 @@
 "use client"
 
-import { Lato } from "next/font/google"
+import { Montserrat, Roboto } from "next/font/google"
 import { createTheme } from "@mantine/core"
 
-const lato = Lato({
+const appFont = Montserrat({
   subsets: ["latin"],
   display: "swap",
-  weight: ["100", "300", "400", "700", "900"],
+  // weight: ["100", "300", "400", "700", "900"],
+})
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["100", "300", "400", "500", "700", "900"],
 })
 
 export const theme = createTheme({
-  fontFamily: lato.style.fontFamily,
+  fontFamily: roboto.style.fontFamily,
   headings: {
-    fontFamily: lato.style.fontFamily,
+    fontFamily: appFont.style.fontFamily,
   },
   /* Put your mantine theme override here */
 })

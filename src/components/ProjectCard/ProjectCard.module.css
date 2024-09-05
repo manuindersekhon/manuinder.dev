@@ -1,0 +1,72 @@
+.projectCard {
+  /* Basic structure */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* Add dark washed green gradient background */
+  background: light-dark(linear-gradient(135deg, #2c3e50, #56727c), linear-gradient(135deg, #1b2631, #2e3d43));
+  padding: 1rem;
+  border-radius: 8px;
+  color: #ffffff; /* Change text color to white for better contrast */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  /* Basic title styling */
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  /* Basic subtitle styling */
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+  opacity: 0.9; /* Slightly reduce opacity for subtle contrast */
+}
+
+.footer {
+  /* Basic footer layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.link {
+  /* Basic link styling */
+  display: inline-flex;
+  align-items: center;
+  color: #a8e6cf; /* Change link color to a light green for better visibility */
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+  margin-top: auto;
+}
+
+.link:hover {
+  color: #dfffed; /* Lighter color on hover */
+}
+
+.externalIcon {
+  /* Basic icon styling */
+  margin-left: 4px;
+}
+
+.tags {
+  /* Basic tags layout */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  /* Basic tag styling */
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
